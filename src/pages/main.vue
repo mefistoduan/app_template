@@ -16,10 +16,10 @@
         </div>
         <div class="icon_list">
             <ul>
-                <li>
-                    <a href="">
-                        <img src="" alt="">
-                        <em>xxx</em>
+                <li v-for="icon in icons">
+                    <a :href="icon.href">
+                        <img :src="icon.img" alt="">
+                        <em>{{icon.name}}</em>
                     </a>
                 </li>
             </ul>
@@ -38,7 +38,16 @@
 export default {
     data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+        icons:[
+            {name:'划算1',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算2',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算3',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算4',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算5',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算6',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算7',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算8',href:'/huasuan',img:'../assets/images/icon.png'},
+        ],
     }
     },
     mounted() {
@@ -88,5 +97,35 @@ export default {
         overflow: hidden;
         display: block;
         margin: 0 auto;
+    }
+    .icon_list {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .icon_list li {
+        width: 25%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    .icon_list li a {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #000;
+    }
+    .icon_list a img {
+        width: 61px;
+        height: 48px;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;;
     }
 </style>

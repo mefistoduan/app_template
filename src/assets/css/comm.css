@@ -9,5 +9,13 @@
     overflow: hidden;
     display: block;
     margin: 0 auto;
-    padding-bottom: 40px;
+}
+a,em,i,s {
+    text-decoration: none;
+    font-style: normal;
+}
+ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
