@@ -18,7 +18,7 @@
             <ul>
                 <li v-for="icon in icons">
                     <a :href="icon.href">
-                        <img :src="icon.img" alt="">
+                        <img  :src="imgsrc + icon.img"  alt="">
                         <em>{{icon.name}}</em>
                     </a>
                 </li>
@@ -38,15 +38,16 @@
 export default {
     data () {
     return {
+        imgsrc:'../static/images/',
         icons:[
-            {name:'划算1',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算2',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算3',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算4',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算5',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算6',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算7',href:'/huasuan',img:'../assets/images/icon.png'},
-            {name:'划算8',href:'/huasuan',img:'../assets/images/icon.png'},
+            {name:'划算1',href:'/huasuan',img:'icon.png'},
+            {name:'划算2',href:'/huasuan',img:'icon.png'},
+            {name:'划算3',href:'/huasuan',img:'icon.png'},
+            {name:'划算4',href:'/huasuan',img:'icon.png'},
+            {name:'划算5',href:'/huasuan',img:'icon.png'},
+            {name:'划算6',href:'/huasuan',img:'icon.png'},
+            {name:'划算7',href:'/huasuan',img:'icon.png'},
+            {name:'划算8',href:'/huasuan',img:'icon.png'},
         ],
     }
     },
