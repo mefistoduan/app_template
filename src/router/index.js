@@ -4,6 +4,7 @@ import index from '@/pages/index'
 import main from '@/pages/main'
 import order from '@/pages/order'
 import mine from '@/pages/mine'
+import category from '@/pages/category'
 
 Vue.use(Router)
 
@@ -45,6 +46,13 @@ export default new Router({
                         title: 'mine'
                     },
                     component: mine,
+                }, {
+                    path: '/category',
+                    name: 'category',
+                    meta: {
+                        title: 'category'
+                    },
+                    component: category,
                 },
             ]
         }
