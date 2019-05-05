@@ -17,10 +17,10 @@
         <div class="icon_list">
             <ul>
                 <li v-for="icon in icons">
-                    <a :href="icon.href">
+                    <router-link :to="{path: '/detail', query: {icon: icon.href}}" >
                         <img  :src="imgsrc + icon.img"  alt="">
                         <em>{{icon.name}}</em>
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -40,14 +40,14 @@ export default {
     return {
         imgsrc:'../static/images/',
         icons:[
-            {name:'划算1',href:'/huasuan',img:'icon.png'},
-            {name:'划算2',href:'/huasuan',img:'icon.png'},
-            {name:'划算3',href:'/huasuan',img:'icon.png'},
-            {name:'划算4',href:'/huasuan',img:'icon.png'},
-            {name:'划算5',href:'/huasuan',img:'icon.png'},
-            {name:'划算6',href:'/huasuan',img:'icon.png'},
-            {name:'划算7',href:'/huasuan',img:'icon.png'},
-            {name:'划算8',href:'/huasuan',img:'icon.png'},
+            {name:'划算1',href:'/detail',img:'icon.png'},
+            {name:'划算2',href:'/detail',img:'icon.png'},
+            {name:'划算3',href:'/detail',img:'icon.png'},
+            {name:'划算4',href:'/detail',img:'icon.png'},
+            {name:'划算5',href:'/detail',img:'icon.png'},
+            {name:'划算6',href:'/detail',img:'icon.png'},
+            {name:'划算7',href:'/detail',img:'icon.png'},
+            {name:'划算8',href:'/detail',img:'icon.png'},
         ],
     }
     },

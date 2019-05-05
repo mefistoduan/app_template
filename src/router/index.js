@@ -5,8 +5,10 @@ import main from '@/pages/main'
 import order from '@/pages/order'
 import mine from '@/pages/mine'
 import category from '@/pages/category'
+import detail from '@/pages/detail'
+import chart from '@/pages/chart'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
     routes: [
@@ -53,6 +55,20 @@ export default new Router({
                         title: 'category'
                     },
                     component: category,
+                },{
+                    path: '/detail',
+                    name: 'detail',
+                    meta: {
+                        title: 'detail'
+                    },
+                    component: detail,
+                },{
+                    path: '/chart',
+                    name: 'chart',
+                    meta: {
+                        title: 'chart'
+                    },
+                    component: chart,
                 },
             ]
         }
