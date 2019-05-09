@@ -1,0 +1,70 @@
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+s {
+    text-decoration: none!important;
+}
+/deep/ em ,s ,a, i {
+    text-decoration: none!important;
+    font-style: normal;
+}
+.time_picker {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.tp_center {
+    width: 92%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background: #fff;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    height: 36px;
+}
+.tp_center select {
+    height: 36px;
+    border: none;
+    float: left;
+    background: #fff;
+    outline: none;
+}
+
+.tp_center .display_time {
+    width: 80%;
+    float: left;
+    height: 36px;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #333333;
+    line-height: 36px;
+}
+
+.display_time ul {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.display_time li {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.display_time s {
+    background: #EBEBEB;
+    padding: 5px;
+}
+/deep/ .mint-popup {
+    width: 100%;
+}
