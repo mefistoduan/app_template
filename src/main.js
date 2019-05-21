@@ -5,33 +5,33 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import Mint from 'mint-ui';
-import Vuex from 'vuex'
-
-import store from './store'
-
 import 'mint-ui/lib/style.css'
+import { Toast } from 'mint-ui';
+// import VConsole from 'vconsole/dist/vconsole.min.js' //import vconsole
+// let vConsole = new VConsole();//初始化;
+// export  default vConsole
+// import Mui from 'vue-awesome-mui';
 
+// Vue.use(Mui);
 Vue.use(Mint);
-Vue.use(Vuex);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    router,
-    store,
-    components: {App},
-    template: '<App/>'
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
 });
 
 Vue.prototype.thisUrl = process.env.NODE_ENV === 'development' ? '/api' : '';
 
-if (process.env.NODE_ENV === 'development') {
+if(process.env.NODE_ENV === 'development'){
     // 引入mockjs
     require('./mock.js');
-} else {
-    // let vConsole = new VConsole() // 初始化
+}else{
+
 }
 
 Vue.prototype.axios = axios;

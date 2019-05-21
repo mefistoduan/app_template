@@ -7,6 +7,7 @@ import mine from '@/pages/mine'
 import category from '@/pages/category'
 import detail from '@/pages/detail'
 import chart from '@/pages/chart'
+import login from '@/pages/login'
 
 Vue.use(Router);
 
@@ -71,6 +72,14 @@ export default new Router({
                     component: chart,
                 },
             ]
-        }
+        },
+        {
+            path: '/login',
+            name: 'login',
+            meta: {
+                title: 'login'
+            },
+            component: login,
+        },
     ]
 })

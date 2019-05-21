@@ -2,7 +2,7 @@
     <div id="pages">
         <mt-header title="修改密码">
             <router-link to="/setting" slot="left">
-               <
+                <!--<img src="../../static/images/comm/arrow-left.png" alt="" class="arr_left">-->
             </router-link>
         </mt-header>
         <div class="container">
@@ -60,7 +60,7 @@
                     Toast('新密码与确认密码不一致');
                     return false
                 }
-                let url = headapi + '?ctl=ajax&mod=xxx&act=xxx';
+                let url = headapi + 'editPassword';
                 let param = {
                     OLD:this.old,
                     NEW:this.pwd,
@@ -73,6 +73,9 @@
                         that.pwd = '';
                         that.again = '';
                         Toast('修改密码'+json.memo);
+                        that.$router.push({
+                            name:'setting',
+                        });
                     }else{
                         Toast(json.memo);
                     }
