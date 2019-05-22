@@ -17,12 +17,14 @@ export default new Router({
             path: '/',
             name: 'index',
             component: index,
+            meta:{index:0},//meta对象的index用来定义当前路由的层级,由小到大,由低到高
             children: [
                 {
                     path: '/',
                     name: 'main',
                     meta: {
-                        title: '首页'
+                        title: '首页',
+                        index:1
                     },
                     component: main,
                 },
@@ -30,7 +32,8 @@ export default new Router({
                     path: '/main',
                     name: 'main',
                     meta: {
-                        title: '首页'
+                        title: '首页',
+                        index:1
                     },
                     component: main,
                 },
@@ -38,7 +41,8 @@ export default new Router({
                     path: '/order',
                     name: 'order',
                     meta: {
-                        title: 'order'
+                        title: 'order',
+                        index:2
                     },
                     component: order,
                 },
