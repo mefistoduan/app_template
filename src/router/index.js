@@ -50,28 +50,32 @@ export default new Router({
                     path: '/mine',
                     name: 'mine',
                     meta: {
-                        title: 'mine'
+                        title: 'mine',
+                        index:2
                     },
                     component: mine,
                 }, {
                     path: '/category',
                     name: 'category',
                     meta: {
-                        title: 'category'
+                        title: 'category',
+                        index:2
                     },
                     component: category,
                 },{
                     path: '/detail',
                     name: 'detail',
                     meta: {
-                        title: 'detail'
+                        title: 'detail',
+                        index:2
                     },
                     component: detail,
                 },{
                     path: '/chart',
                     name: 'chart',
                     meta: {
-                        title: 'chart'
+                        title: 'chart',
+                        index:2
                     },
                     component: chart,
                 },
@@ -81,7 +85,8 @@ export default new Router({
             path: '/login',
             name: 'login',
             meta: {
-                title: 'login'
+                title: 'login',
+                index:1
             },
             component: login,
         },
